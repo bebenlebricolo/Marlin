@@ -1,3 +1,10 @@
+# Marlin 3D printer Firmware (adapted to Prusa I3 rework 1.5 from EMotionTech)
+This repository only aims to provide an adaptation layer meant to be used with the Prusa I3 rework which is built around a non standard deviation of standard Prusa I3.
+I reconfigured parameters based on the former Marlin 1.x configuration file shipped with this printer and using the newest firmware configuration in order to benefit from the latest features.
+
+Auto bed leveling feature is activated using the inductive probe shipped with PrusaI3 rework from EMotionTech, using a 3 by 3 test grid as probing pattern.
+The probe connects to an adaptater board that plugs into the **+5V/+VCC/PS_ON** connector of the **RAMPS 1.4 board**, where **PS_ON** is connected to pin **D12** of the Arduino Mega 2560, so as the hardware configuration is quite esoteric for this probe, special care was paid to get this working.
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
